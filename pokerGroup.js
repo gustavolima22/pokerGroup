@@ -2,8 +2,8 @@
 
 var valorCarta = ['2','3','4','5','6','7','8','9','10','J','Q','R','S'];
 //J = Valete    Q = Rainha      R = Rei     S = Ás
+// var valorNaipe = ['D','H','S','C'];
 var valorNaipe = ['D','H','S','C'];
-var valorNaipe2 = ['D','D','D','D'];
 //Ouro (D), Copa (H), Espadas (S), Paus (C)
 var cartaRetirada = [];
 var jogador1 = {
@@ -32,7 +32,7 @@ var regras = {
 
 while(cartaRetirada.length < 10){
     carta = valorCarta[Math.floor((Math.random() * 13))];
-    naipe = cartaRetirada.length < 5 ? valorNaipe[Math.floor((Math.random() * 4))] : valorNaipe2[Math.floor((Math.random() * 4))];
+    naipe =  valorNaipe[Math.floor((Math.random() * 4))];
     cartaRetirada.push(carta + naipe);
     console.log(cartaRetirada);
 }
@@ -48,7 +48,7 @@ console.log('Jogador 2: ');
 console.log(jogador2.cartas);
 
 function setHandValue(player){
-    player.valorMao = 1;
+    player.valorMao = 1; //Carta alta
     player.valorMao = isFlush(player.cartas);
 }
 
@@ -61,9 +61,9 @@ function isFlush(playerHand){
     }
     
     if(naipeDiferente){
-        return 1;
+        return 1; //Carta alta
     }else{
-        return 6;
+        return 6; //Flush
     }
 }
 
