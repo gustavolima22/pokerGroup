@@ -42,7 +42,14 @@ for(var i = 5; i < 10; i++){
     jogador2.cartas[i-5] = cartaRetirada[i];
 }
 console.log('Jogador 1: ');
-console.log(jogador1);
+console.log(jogador1.cartas);
 console.log('Jogador 2: ');
-console.log(jogador2);
+console.log(jogador2.cartas);
 
+function setHandValue(player){
+    
+}
+
+function comparaMaosJogadores(player1, player2){
+
+}
