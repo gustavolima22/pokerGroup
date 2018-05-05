@@ -42,7 +42,6 @@ for(var i = 0; i < 5; i++){
 for(var i = 5; i < 10; i++){
     jogador2.cartas[i-5] = cartaRetirada[i];
 }
-jogador2.cartas = [ '2C', '3C', '4C', '5C', '6C' ];
 console.log('Jogador 1: ');
 console.log(jogador1.cartas);
 console.log('Jogador 2: ');
@@ -132,5 +131,3 @@ function comparaMaosJogadores(player1, player2){
 setHandValue(jogador1);
 setHandValue(jogador2);
 comparaMaosJogadores(jogador1,jogador2);
-
-//gustavo.lima@groupsoftware.com.br
