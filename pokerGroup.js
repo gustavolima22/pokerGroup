@@ -47,9 +47,40 @@ console.log('Jogador 2: ');
 console.log(jogador2.cartas);
 
 function setHandValue(player){
-    
+    player.valorMao = 1;
+    /* if(){
+
+    }else if(){
+
+    }else if(){
+        
+    }else if(){
+        
+    }else if(){
+        
+    }else if(){
+        
+    }else if(){
+        
+    }else if(){
+        
+    }else if(){
+        
+    } */
 }
 
 function comparaMaosJogadores(player1, player2){
-
+    if(player1.valorMao > player2.valorMao){
+        console.log('Jogador 1 ganhou');
+    }else if(player1.valorMao < player2.valorMao){
+        console.log('Jogador 2 ganhou');
+    }else{
+        console.log('Empate');
+    }
 }
+
+setHandValue(jogador1);
+setHandValue(jogador2);
+comparaMaosJogadores(jogador1,jogador2);
+
+//gustavo.lima@groupsoftware.com.br
